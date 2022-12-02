@@ -89,21 +89,21 @@ const Dashboard = () => {
     }
 
     const handleUpdate=()=>{
-        if(!name || !price || !quantity){
-            return setError(true)
-          }
-      const payload={name,price,quantity}
-      let _id=updateId
-      setModalLoading(true)
-      addProduct(payload,_id).then(res => {
-          setModalLoading(false)
-          // setProductData()
-          setHandlefetch(!handlefetch)
-          handleClose()
-      }).catch(err => {
-          setModalLoading(false)
-          console.log(err)
-      })
+    //     if(!name || !price || !quantity){
+    //         return setError(true)
+    //       }
+    //   const payload={name,price,quantity}
+    //   let _id=updateId
+    //   setModalLoading(true)
+    //   addProduct(payload,_id).then(res => {
+    //       setModalLoading(false)
+    //       // setProductData()
+    //       setHandlefetch(!handlefetch)
+    //       handleClose()
+    //   }).catch(err => {
+    //       setModalLoading(false)
+    //       console.log(err)
+    //   })
     }
 
 
